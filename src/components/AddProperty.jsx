@@ -52,7 +52,7 @@ const Add = () => {
     try {
       setLoading(true);
       const response = await axios.post(
-        "http://localhost:8000/api/addproperty",
+        "https://server-jvhw.onrender.com/api/addproperty",
         formData,
         {
           headers: {
