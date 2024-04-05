@@ -28,12 +28,14 @@ const PropertyList = ({ products }) => {
           </div>
         </Link>
       ))}
-       <Link
+      <div>
+         <Link
         className=" bg-black p-2 rounded-lg  text-white text-center hover:bg-slate-500 "
         to="/addproperty"
       >
         Add Property
       </Link>
+      </div>
     </div>
   );
 };
