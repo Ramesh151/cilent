@@ -7,12 +7,7 @@ const PropertyList = ({ products }) => {
       <h1 className=" text-black p-6 text-2xl font-bold text-center">
         PRODUCT LIST
       </h1>
-       <Link
-        className=" bg-black p-2 rounded-lg  text-white text-center hover:bg-slate-500 "
-        to="/addproperty"
-      >
-        Add Property
-      </Link>
+      
       {products.map((product) => (
         <Link to={`/products/${product._id}`} key={product._id}>
           <div className="max-w-2xl mx-auto mt-4">
@@ -33,6 +28,12 @@ const PropertyList = ({ products }) => {
           </div>
         </Link>
       ))}
+       <Link
+        className=" bg-black p-2 rounded-lg  text-white text-center hover:bg-slate-500 "
+        to="/addproperty"
+      >
+        Add Property
+      </Link>
     </div>
   );
 };
